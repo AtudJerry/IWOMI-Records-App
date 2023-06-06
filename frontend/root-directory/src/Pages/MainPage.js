@@ -6,7 +6,7 @@ import {IconButton} from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { AddCircleOutline } from "@material-ui/icons";
 import {Button} from "@material-ui/core";
-import Login from "./Login";
+
 const MainPage = () => {
   return (
     <div className=" ml-12">
@@ -73,7 +73,7 @@ const MainPage = () => {
 
 
         </div><br></br>
-        <Login/>
+      
         <h7 className="flex items-center justify-center text-green-700">@IWOMI 2023</h7>
            
         

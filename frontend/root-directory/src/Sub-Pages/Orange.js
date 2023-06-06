@@ -10,7 +10,7 @@ const Orange = () => {
     <div className=" ml-12">
 
       <div>
-        <div className="grid grid-cols-3 ">
+        <div className="lg:grid grid-cols-3 ">
           <div>
             <h1 className="text-black text-xl lg:text-2xl">Orange APPLICATIONS</h1>
 </div>
