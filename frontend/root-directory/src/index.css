@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .card{
-  @apply h-40 w-40 lg:ml-5 lg:mr-5 bg-gray-100 shadow-lg rounded overflow-hidden hover:shadow-2xl ;
+  @apply h-52 w-48 lg:ml-5 lg:mr-5 bg-gray-100 shadow-lg rounded-lg overflow-hidden hover:shadow-2xl ;
 }
 
 /* body {
