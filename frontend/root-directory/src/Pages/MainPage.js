@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../index.css";
 import { TextField } from "@material-ui/core";
 import { Search } from "@material-ui/icons";
@@ -6,11 +6,26 @@ import {IconButton} from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { AddCircleOutline } from "@material-ui/icons";
 import {Button} from "@material-ui/core";
+import Form from "./Form";
+
+import Add from "./Add";
 
 const MainPage = () => {
+
+  // const [products,setProducts] = useState([])
+  // const addProduct = (product) =>{
+  //   setProducts([...products, product])
+  //   alert(`you have added ${product.name}`)
+  // }
+
   return (
     <div className=" ml-12">
-
+    {/* <ProductForm addProductProp={addProduct}/>
+{
+  products.map( (product) => 
+    <Add key={product.id} item={product}/>
+  )
+} */}
       <div>
         <div className="grid grid-cols-3 ">
           <div>
@@ -31,9 +46,16 @@ const MainPage = () => {
 {/* cards */}
 
         <div className=" p-9 lg:grid lg:grid-cols-4 gap-12 ">
+
+
+
+
+
           <div className="card">
             <img src={require("../images/card-pic1.jpg")}></img> 
         <div>  <span>  <Link to = "./ccc"> <IconButton> CCC Plc</IconButton> </Link> </span> </div>  
+        
+        
           </div>
 
           <div className="card">
@@ -72,7 +94,8 @@ const MainPage = () => {
           </div>
 
 
-        </div><br></br>
+        </div>
+        <Form/><br></br>
       
         <h7 className="flex items-center justify-center text-green-700">@IWOMI 2023</h7>
            
