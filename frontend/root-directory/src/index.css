@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 .card{
-  @apply h-52 w-48 lg:ml-5 lg:mr-5 bg-gray-100 shadow-lg rounded-lg overflow-hidden hover:shadow-2xl ;
+  @apply h-72 w-80 lg:ml-5 lg:mr-5 bg-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-2xl;
 }
-
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.form{
+  margin-left: 30%;
+  width: 40%;
+  
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+.add-butt{
+  background-color: rgb(23, 110, 23);
+}
+.text-col{
+  color :rgb(23, 110, 23);
+}
+.head-text{
+  color:rgb(44, 135, 44);
+}

@@ -21,7 +21,7 @@ const Login = () => {
 
       
         <Box className="grid grid-cols-2 gap-2">
-        <div className="font-black ml-16 text-left">Name    :</div>
+        <div className="font-black ml-16 text-left">Email Address   :</div>
 {/*         
          &nbsp; &nbsp; */}
      <div className="-my-6  text-left"> <TextField
@@ -30,13 +30,29 @@ const Login = () => {
             margin="none"
             size="small"
             label="Enter your Name"
+            type="text" name="email" placeholder="enter your email address" onChange={ (e) =>{setEmail(e.target.value)}}
           /></div>  
         </Box>
         <br></br>
 
       
         <Box className="grid grid-cols-2 gap-2">
-        <div className="font-black ml-16 text-left">Password    :</div>
+        <div className="font-black ml-16 text-left">User Name    :</div>
+{/*         
+         &nbsp; &nbsp; */}
+     <div className="-my-6  text-left"> <TextField
+            className="text"
+            required
+            margin="none"
+            size="small"
+            label="Enter your Name"
+            type="text" name="username" placeholder="enter your name"onChange={ (e) =>{setUsername(e.target.value)}}
+
+          /></div>  
+        </Box>
+        <br></br>
+        <Box className="grid grid-cols-2 gap-2">
+        <div className="font-black ml-16 text-left">Password   :</div>
 {/*         
          &nbsp; &nbsp; */}
      <div className="-my-6  text-left"> <TextField
@@ -45,9 +61,11 @@ const Login = () => {
             margin="none"
             size="small"
             label="Enter your Password"
+      
+            type="text" name="password" placeholder="enter your user password" onChange={ (e) =>{setPassword(e.target.value)}}
+
           /></div>  
         </Box>
-        <br></br>
 
         <br></br>
 
